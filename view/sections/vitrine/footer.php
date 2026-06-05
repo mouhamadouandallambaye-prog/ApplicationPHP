@@ -2,11 +2,11 @@
 			<div class="container">
 				<div class="footer-brand">
 					<div class="footer-brand-logo"></div>
-					Color Admin
+					Gorgoorlu
 				</div>
 				<p>
-					&copy; Copyright Color Admin 2019 <br />
-					An admin & front end theme with serious impact. Created by <a href="#">SeanTheme</a>
+					&copy; 2026 Gorgoorlu Sénégal <br />
+					Plateforme de recrutement, mise en relation et opportunités locales pour étudiants et employeurs.
 				</p>
 				<p class="social-list">
 					<a href="#"><i class="fab fa-facebook-f fa-fw"></i></a>

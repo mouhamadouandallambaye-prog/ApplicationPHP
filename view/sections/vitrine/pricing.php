@@ -1,96 +1,96 @@
 <div id="pricing" class="content" data-scrollview="true">
 			<!-- begin container -->
 			<div class="container">
-				<h2 class="content-title">Our Price</h2>
+				<h2 class="content-title">Comment ça marche</h2>
 				<p class="content-desc">
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum consectetur eros dolor,<br />
-					sed bibendum turpis luctus eget
+					Un parcours simple pour les étudiants comme pour les employeurs : créer un compte, consulter les annonces, publier une offre ou postuler.<br />
+					Gorgoorlu favorise la confiance, la clarté et la proximité locale.
 				</p>
 				<!-- begin pricing-table -->
 				<ul class="pricing-table pricing-col-4">
 					<li data-animation="true" data-animation-type="fadeInUp">
 						<div class="pricing-container">
-							<h3>Starter</h3>
+							<h3>Étudiant</h3>
 							<div class="price">
 								<div class="price-figure">
-									<span class="price-number">FREE</span>
+									<span class="price-number">Gratuit</span>
 								</div>
 							</div>
 							<ul class="features">
-								<li>1GB Storage</li>
-								<li>2 Clients</li>
-								<li>5 Active Projects</li>
-								<li>5 Colors</li>
-								<li>Free Goodies</li>
-								<li>24/7 Email support</li>
+								<li>Créer un profil</li>
+								<li>Consulter les offres</li>
+								<li>Postuler en ligne</li>
+								<li>Suivre ses candidatures</li>
+								<li>Accès à des missions locales</li>
+								<li>Support simple et réactif</li>
 							</ul>
 							<div class="footer">
-								<a href="#" class="btn btn-inverse btn-theme btn-block">Buy Now</a>
+								<a href="login.php" class="btn btn-inverse btn-theme btn-block">Créer mon profil</a>
 							</div>
 						</div>
 					</li>
 					<li data-animation="true" data-animation-type="fadeInUp">
 						<div class="pricing-container">
-							<h3>Basic</h3>
+							<h3>Employeur</h3>
 							<div class="price">
 								<div class="price-figure">
-									<span class="price-number">$9.99</span>
-									<span class="price-tenure">per month</span>
+									<span class="price-number">Simple</span>
+									<span class="price-tenure">et rapide</span>
 								</div>
 							</div>
 							<ul class="features">
-								<li>2GB Storage</li>
-								<li>5 Clients</li>
-								<li>10 Active Projects</li>
-								<li>10 Colors</li>
-								<li>Free Goodies</li>
-								<li>24/7 Email support</li>
+								<li>Publier une offre</li>
+								<li>Choisir des profils adaptés</li>
+								<li>Recevoir des candidatures</li>
+								<li>Gérer les contacts facilement</li>
+								<li>Développer votre réseau local</li>
+								<li>Accès à des catégories variées</li>
 							</ul>
 							<div class="footer">
-								<a href="#" class="btn btn-inverse btn-theme btn-block">Buy Now</a>
+								<a href="login.php" class="btn btn-inverse btn-theme btn-block">Publier une offre</a>
 							</div>
 						</div>
 					</li>
 					<li class="highlight" data-animation="true" data-animation-type="fadeInUp">
 						<div class="pricing-container">
-							<h3>Premium</h3>
+							<h3>Sécurité</h3>
 							<div class="price">
 								<div class="price-figure">
-									<span class="price-number">$19.99</span>
-									<span class="price-tenure">per month</span>
+									<span class="price-number">Priorité</span>
+									<span class="price-tenure">et sérieux</span>
 								</div>
 							</div>
 							<ul class="features">
-								<li>5GB Storage</li>
-								<li>10 Clients</li>
-								<li>20 Active Projects</li>
-								<li>20 Colors</li>
-								<li>Free Goodies</li>
-								<li>24/7 Email support</li>
+								<li>Respect des engagements</li>
+								<li>Profil vérifié et clair</li>
+								<li>Communication plus fiable</li>
+								<li>Qualité des candidatures</li>
+								<li>Un esprit de proximité</li>
+								<li>Accompagnement professionnel</li>
 							</ul>
 							<div class="footer">
-								<a href="#" class="btn btn-primary btn-theme btn-block">Buy Now</a>
+								<a href="login.php" class="btn btn-primary btn-theme btn-block">En savoir plus</a>
 							</div>
 						</div>
 					</li>
 					<li data-animation="true" data-animation-type="fadeInUp">
 						<div class="pricing-container">
-							<h3>Lifetime</h3>
+							<h3>Résultats</h3>
 							<div class="price">
 								<div class="price-figure">
-									<span class="price-number">$999</span>
+									<span class="price-number">Mesurables</span>
 								</div>
 							</div>
 							<ul class="features">
-								<li>Unlimited Storage</li>
-								<li>Unlimited Clients</li>
-								<li>Unlimited Projects</li>
-								<li>Unlimited Colors</li>
-								<li>Free Goodies</li>
-								<li>24/7 Email support</li>
+								<li>Plus de visibilité</li>
+								<li>Des candidatures ciblées</li>
+								<li>Des missions adaptées</li>
+								<li>Une croissance locale</li>
+								<li>Un réseau professionnel utile</li>
+								<li>Un parcours de confiance</li>
 							</ul>
 							<div class="footer">
-								<a href="#" class="btn btn-inverse btn-theme btn-block">Buy Now</a>
+								<a href="login.php" class="btn btn-inverse btn-theme btn-block">Découvrir Gorgoorlu</a>
 							</div>
 						</div>
 					</li>

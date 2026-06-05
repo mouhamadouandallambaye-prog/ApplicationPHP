@@ -10,40 +10,30 @@
 			<div class="container">
 				<!-- begin row -->
 				<div class="row">
-					<!-- begin col-3 -->
 					<div class="col-lg-3 milestone-col">
 						<div class="milestone">
-							<div class="number" data-animation="true" data-animation-type="number" data-final-number="1292">1,292</div>
-							<div class="title">Themes & Template</div>
+							<div class="number" data-animation="true" data-animation-type="number" data-final-number="500">500+</div>
+							<div class="title">Étudiants actifs</div>
 						</div>
 					</div>
-					<!-- end col-3 -->
-					<!-- begin col-3 -->
 					<div class="col-lg-3 milestone-col">
 						<div class="milestone">
-							<div class="number" data-animation="true" data-animation-type="number" data-final-number="9039">9,039</div>
-							<div class="title">Registered Members</div>
+							<div class="number" data-animation="true" data-animation-type="number" data-final-number="200">200+</div>
+							<div class="title">Employeurs partenaires</div>
 						</div>
 					</div>
-					<!-- end col-3 -->
-					<!-- begin col-3 -->
 					<div class="col-lg-3 milestone-col">
 						<div class="milestone">
-							<div class="number" data-animation="true" data-animation-type="number" data-final-number="89291">89,291</div>
-							<div class="title">Items Sold</div>
+							<div class="number" data-animation="true" data-animation-type="number" data-final-number="15">15</div>
+							<div class="title">Catégories d’offres</div>
 						</div>
 					</div>
-					<!-- end col-3 -->
-					<!-- begin col-3 -->
 					<div class="col-lg-3 milestone-col">
 						<div class="milestone">
-							<div class="number" data-animation="true" data-animation-type="number" data-final-number="129">129</div>
-							<div class="title">Theme Authors</div>
+							<div class="number" data-animation="true" data-animation-type="number" data-final-number="24">24h</div>
+							<div class="title">Pour être mis en relation</div>
 						</div>
 					</div>
-					<!-- end col-3 -->
 				</div>
-				<!-- end row -->
 			</div>
-			<!-- end container -->
 		</div>

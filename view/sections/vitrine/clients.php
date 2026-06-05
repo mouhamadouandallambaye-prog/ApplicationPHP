@@ -8,7 +8,7 @@
 			<!-- end content-bg -->
 			<!-- begin container -->
 			<div class="container" data-animation="true" data-animation-type="fadeInUp">
-				<h2 class="content-title">Our Client Testimonials</h2>
+				<h2 class="content-title">Ce que disent les étudiants et employeurs</h2>
 				<!-- begin carousel -->
 				<div class="carousel testimonials slide" data-ride="carousel" id="testimonials">
 					<!-- begin carousel-inner -->
@@ -17,33 +17,30 @@
 						<div class="carousel-item active">
 							<blockquote>
 								<i class="fa fa-quote-left"></i>
-								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce viverra, nulla ut interdum fringilla,<br />
-								urna massa cursus lectus, eget rutrum lectus neque non ex.
+								Grâce à Gorgoorlu, j’ai trouvé une mission de soutien informatique pendant mes études. Le processus est simple et les annonces correspondent vraiment à mes compétences.
 								<i class="fa fa-quote-right"></i>
 							</blockquote>
-							<div class="name"> — <span class="text-primary">Mark Doe</span>, Designer</div>
+							<div class="name"> — <span class="text-primary">Rosalie</span>, Designer chez Sonatel</div>
 						</div>
 						<!-- end item -->
 						<!-- begin item -->
 						<div class="carousel-item">
 							<blockquote>
 								<i class="fa fa-quote-left"></i>
-								Donec cursus ligula at ante vulputate laoreet. Nulla egestas sit amet lorem non bibendum.<br />
-								Nulla eget risus velit. Pellentesque tincidunt velit vitae tincidunt finibus.
+								Nous avons publié une offre de vente et d’assistance administrative en moins de 10 minutes. Les profils reçus étaient sérieux et prêts à agir.
 								<i class="fa fa-quote-right"></i>
 							</blockquote>
-							<div class="name"> — <span class="text-primary">Joe Smith</span>, Developer</div>
+							<div class="name"> — <span class="text-primary">Mamour Sambe</span>, Ingénieur en Génie Civil</div>
 						</div>
 						<!-- end item -->
 						<!-- begin item -->
 						<div class="carousel-item">
 							<blockquote>
 								<i class="fa fa-quote-left"></i>
-								Sed tincidunt quis est sed ultrices. Sed feugiat auctor ipsum, sit amet accumsan elit vestibulum<br />
-								fringilla. In sollicitudin ac ligula eget vestibulum.
+								Le fait que la plateforme soit locale et orientée emploi étudiant nous donne confiance. C’est un vrai levier pour recruter rapidement sur le terrain.
 								<i class="fa fa-quote-right"></i>
 							</blockquote>
-							<div class="name"> — <span class="text-primary">Linda Adams</span>, Programmer</div>
+							<div class="name"> — <span class="text-primary">Khadija</span>, Fonctionnaire</div>
 						</div>
 						<!-- end item -->
 					</div>

@@ -24,9 +24,11 @@
 		<div id="content" class="content">
 			<!-- begin breadcrumb -->
 			<ol class="breadcrumb float-xl-right">
-				<li class="breadcrumb-item"><a href="javascript:;">Ajouter</a></li>
-				<li class="breadcrumb-item"><a href="javascript:;">Corbeille</a></li>
-				<li class="breadcrumb-item active">Users</li>
+				<li class="breadcrumb-item">
+					<a href="#modal-annonce" class="btn btn-sm btn-dark text-white fw-bold" data-toggle="modal">Ajouter</a>
+				</li>
+				<li class="breadcrumb-item"><a href="javascript:;" class="btn btn-sm btn-dark text-white fw-bold" data-toggle="modal">Corbeille</a></li>
+				<li class="breadcrumb-item active"><a href="javascript:;" class="btn btn-sm btn-dark text-white fw-bold" data-toggle="modal">Users</a></li>
 			</ol>
 			<!-- end breadcrumb -->
 			<!-- begin page-header -->
@@ -587,10 +589,62 @@
 		
 		<!-- ================== section scroll to top ================== -->
 		<a href="javascript:;" class="btn btn-icon btn-circle btn-success btn-scroll-to-top fade" data-click="scroll-top"><i class="fa fa-angle-up"></i></a>
-		
 	</div>
-	<!-- end page container -->
-	
+
+	<!-- ================== Modal Ajouter Annonce ================== -->
+<div class="modal fade" id="modal-annonce" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="modal-annonce-label" aria-hidden="true"> 
+    <div class="modal-dialog">
+        <div class="modal-content">
+
+            <div class="modal-header">
+                <h4 class="modal-title">Ajouter une annonce</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+            </div>
+
+            <form action="#"  method="POST">
+                <div  class="modal-body">
+
+                    <!-- Titre -->
+                    <div class="form-group">
+                        <label for="titre">Titre</label>
+                        <input type="text" class="form-control" id="titre" name="titre" required>
+                    </div>
+
+                    <!-- Description -->
+                    <div class="form-group">
+                        <label for="description">Description</label>
+                        <textarea class="form-control" id="description" name="description" rows="4" required></textarea>
+                    </div>
+
+                    <!-- Salaire -->
+                    <div class="form-group">
+                        <label for="salaire">Salaire</label>
+                        <input type="number" class="form-control" id="salaire" name="salaire" min="0" required>
+                    </div>
+
+                    <!-- Statut -->
+                    <div class="form-group">
+                        <label for="status">Statut</label>
+                        <select class="form-control" id="status" name="status" required>
+                            <option value="">-- Sélectionner --</option>
+                            <option value="ouverte">Ouverte</option>
+                            <option value="fermee">Fermée</option>
+                            <option value="en_attente">En attente</option>
+                        </select>
+                    </div>
+
+                </div>
+
+				<div class="modal-footer">
+					<button type="submit" class="btn btn-primary">Ajouter</button>
+                    <button type="reset" class="btn btn-danger">Annuler</button>
+                </div>
+                
+            </form>
+
+        </div>
+    </div>
+</div>
 	<!-- ==================  JS ================== -->
 	<?php require_once("../../../sections/admin/script.php"); ?>
 </body>

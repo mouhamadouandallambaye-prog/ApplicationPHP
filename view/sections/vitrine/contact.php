@@ -1,28 +1,26 @@
 <div id="contact" class="content bg-silver-lighter" data-scrollview="true">
 			<!-- begin container -->
 			<div class="container">
-				<h2 class="content-title">Contact Us</h2>
+				<h2 class="content-title">Prêt à rejoindre Gorgoorlu ?</h2>
 				<p class="content-desc">
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum consectetur eros dolor,<br />
-					sed bibendum turpis luctus eget
+					Contactez-nous pour créer votre compte étudiant, publier vos offres ou obtenir plus d’informations sur la plateforme.<br />
+					Nous valorisons le sérieux, la confiance et les opportunités locales au Sénégal.
 				</p>
 				<!-- begin row -->
 				<div class="row">
 					<!-- begin col-6 -->
 					<div class="col-lg-6" data-animation="true" data-animation-type="fadeInLeft">
-						<h3>If you have a project you would like to discuss, get in touch with us.</h3>
+						<h3>Vous êtes étudiant, employeur ou prestataire ? Parlons-en.</h3>
 						<p>
-							Morbi interdum mollis sapien. Sed ac risus. Phasellus lacinia, magna a ullamcorper laoreet, lectus arcu pulvinar risus, vitae facilisis libero dolor a purus.
+							Gorgoorlu vous aide à trouver rapidement les bonnes personnes ou les bonnes opportunités, avec une approche claire et professionnelle.
 						</p>
 						<p>
-							<strong>SeanTheme Studio, Inc</strong><br />
-							795 Folsom Ave, Suite 600<br />
-							San Francisco, CA 94107<br />
-							P: (123) 456-7890<br />
+							<strong>Gorgoorlu Sénégal</strong><br />
+							Dakar, Thiès, Saint-Louis et tout le territoire national<br />
+							Support : +221 77 000 00 00<br />
 						</p>
 						<p>
-							<span class="phone">+11 (0) 123 456 78</span><br />
-							<a href="mailto:hello@emailaddress.com" class="text-primary">seanthemes@support.com</a>
+							<a href="mailto:contact@gorgoorlu.sn" class="text-primary">contact@gorgoorlu.sn</a>
 						</p>
 					</div>
 					<!-- end col-6 -->

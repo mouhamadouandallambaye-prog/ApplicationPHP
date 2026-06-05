@@ -1,4 +1,4 @@
-<div id="action-box" class="content has-bg" data-scrollview="true">
+user-1.jpg<div id="action-box" class="content has-bg" data-scrollview="true">
 			<!-- begin content-bg -->
 			<div class="content-bg" style="background-image: url(public/templates/templateVitrine/assets/img/bg/bg-action.jpg)"
 				data-paroller-factor="0.5"
@@ -15,15 +15,15 @@
 						<div class="icon-large text-primary">
 							<i class="fa fa-binoculars"></i>
 						</div>
-						<h3>CHECK OUT OUR ADMIN THEME!</h3>
+						<h3>Étudiants : trouvez votre prochaine mission. Employeurs : publiez votre offre dès aujourd’hui.</h3>
 						<p>
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus faucibus magna eu lacinia eleifend.
+							Gorgoorlu simplifie la mise en relation entre profils étudiants motivés et structures qui ont besoin de confiance, de réactivité et d’opportunités locales.
 						</p>
 					</div>
 					<!-- end col-9 -->
 					<!-- begin col-3 -->
 					<div class="col-lg-3">
-						<a href="#" class="btn btn-outline-white btn-theme btn-block">Live Preview</a>
+							<a href="login.php" class="btn btn-outline-white btn-theme btn-block">Rejoindre Gorgoorlu</a>
 					</div>
 					<!-- end col-3 -->
 				</div>

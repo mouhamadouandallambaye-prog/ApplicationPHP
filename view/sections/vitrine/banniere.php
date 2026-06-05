@@ -8,15 +8,16 @@
 			<!-- end content-bg -->
 			<!-- begin container -->
 			<div class="container home-content">
-				<h1>Welcome to Color Admin</h1>
-				<h3>Multipurpose One Page Theme</h3>
+				<h1>Gorgoorlu</h1>
+				<h3>Le lieu de rencontre entre étudiants sénégalais et employeurs locaux</h3>
 				<p>
-					We have created a multi-purpose theme that take the form of One-Page or Multi-Page Version.<br />
-					Use our <a href="#">theme panel</a> to select your favorite theme color.
+					Trouvez un job à temps partiel, une mission ponctuelle ou un freelance en toute confiance.<br />
+					Publiez une offre en quelques minutes et choisissez les profils qui correspondent à vos besoins.
 				</p>
-				<a href="#" class="btn btn-theme btn-primary">Explore More</a> <a href="#" class="btn btn-theme btn-outline-white">Purchase Now</a><br />
+				<a href="login.php" class="btn btn-theme btn-primary">Créer mon profil étudiant</a>
+				<a href="login.php" class="btn btn-theme btn-outline-white">Publier une offre</a><br />
 				<br />
-				or <a href="#">subscribe</a> newsletter
+				Des opportunités dès aujourd’hui à Dakar, Thiès, Saint-Louis et partout au Sénégal.
 			</div>
 			<!-- end container -->
 		</div>

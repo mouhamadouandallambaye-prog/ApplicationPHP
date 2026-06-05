@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 	
 <head>
 	<meta charset="utf-8" />
-	<title>Index Vitrine</title>
+	<title>Gorgoorlu Index</title>
+	<meta name="description" content="Gorgoorlu met en relation étudiants sénégalais et employeurs locaux pour des missions, jobs à temps partiel et opportunités professionnelles." />
 	<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport" />
 
 	

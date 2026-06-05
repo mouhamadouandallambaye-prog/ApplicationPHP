@@ -1,10 +1,10 @@
 <div id="service" class="content" data-scrollview="true">
 			<!-- begin container -->
 			<div class="container">
-				<h2 class="content-title">Our Services</h2>
+				<h2 class="content-title">Pourquoi les étudiants et employeurs choisissent Gorgoorlu</h2>
 				<p class="content-desc">
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum consectetur eros dolor,<br />
-					sed bibendum turpis luctus eget
+					Une plateforme pensée pour les jobs étudiants, missions locales et recrutements ponctuels au Sénégal.<br />
+					Simple, rapide, sécurisée et adaptée à la réalité du terrain.
 				</p>
 				<!-- begin row -->
 				<div class="row">
@@ -13,8 +13,8 @@
 						<div class="service">
 							<div class="icon" data-animation="true" data-animation-type="bounceIn"><i class="fa fa-cog"></i></div>
 							<div class="info">
-								<h4 class="title">Easy to Customize</h4>
-								<p class="desc">Duis in lorem placerat, iaculis nisi vitae, ultrices tortor. Vestibulum molestie ipsum nulla. Maecenas nec hendrerit eros, sit amet maximus leo.</p>
+								<h4 class="title">Des offres variées</h4>
+								<p class="desc">Informatique, commerce, enseignement, assistance administrative, livraison, communication et services divers : chaque profil trouve sa place.</p>
 							</div>
 						</div>
 					</div>
@@ -24,8 +24,8 @@
 						<div class="service">
 							<div class="icon" data-animation="true" data-animation-type="bounceIn"><i class="fa fa-paint-brush"></i></div>
 							<div class="info">
-								<h4 class="title">Clean & Careful Design</h4>
-								<p class="desc">Etiam nulla turpis, gravida et orci ac, viverra commodo ipsum. Donec nec mauris faucibus, congue nisi sit amet, lobortis arcu.</p>
+								<h4 class="title">Un accès simple</h4>
+								<p class="desc">Créer un compte, consulter les annonces et postuler en quelques étapes, sans complication ni jargon inutile.</p>
 							</div>
 						</div>
 					</div>
@@ -35,8 +35,8 @@
 						<div class="service">
 							<div class="icon" data-animation="true" data-animation-type="bounceIn"><i class="fa fa-file"></i></div>
 							<div class="info">
-								<h4 class="title">Well Documented</h4>
-								<p class="desc">Ut vel laoreet tortor. Donec venenatis ex velit, eget bibendum purus accumsan cursus. Curabitur pulvinar iaculis diam.</p>
+								<h4 class="title">Une confiance renforcée</h4>
+								<p class="desc">Les profils et annonces sont présentés avec clarté pour favoriser la sécurité, le respect et la qualité de la relation.</p>
 							</div>
 						</div>
 					</div>
@@ -46,8 +46,8 @@
 						<div class="service">
 							<div class="icon" data-animation="true" data-animation-type="bounceIn"><i class="fa fa-code"></i></div>
 							<div class="info">
-								<h4 class="title">Re-usable Code</h4>
-								<p class="desc">Aenean et elementum dui. Aenean massa enim, suscipit ut molestie quis, pretium sed orci. Ut faucibus egestas mattis.</p>
+								<h4 class="title">Des opportunités locales</h4>
+								<p class="desc">Dakar, Thiès, Saint-Louis et autres villes : des missions concrètes à portée de main pour les étudiants et les employeurs.</p>
 							</div>
 						</div>
 					</div>
@@ -57,8 +57,8 @@
 						<div class="service">
 							<div class="icon" data-animation="true" data-animation-type="bounceIn"><i class="fa fa-shopping-cart"></i></div>
 							<div class="info">
-								<h4 class="title">Online Shop</h4>
-								<p class="desc">Quisque gravida metus in sollicitudin feugiat. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+								<h4 class="title">Un accompagnement professionnel</h4>
+								<p class="desc">Nous mettons en avant l’expérience, la disponibilité et les compétences afin d’aider chacun à choisir la bonne opportunité.</p>
 							</div>
 						</div>
 					</div>
@@ -68,8 +68,8 @@
 						<div class="service">
 							<div class="icon" data-animation="true" data-animation-type="bounceIn"><i class="fa fa-heart"></i></div>
 							<div class="info">
-								<h4 class="title">Free Support</h4>
-								<p class="desc">Integer consectetur, massa id mattis tincidunt, sapien erat malesuada turpis, nec vehicula lacus felis nec libero. Fusce non lorem nisl.</p>
+								<h4 class="title">Des missions qui font grandir</h4>
+								<p class="desc">Chaque annonce peut ouvrir un premier pas professionnel, créer du réseau et aider à construire une expérience utile.</p>
 							</div>
 						</div>
 					</div>

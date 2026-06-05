@@ -12,10 +12,10 @@
 				<div class="row">
 					<!-- begin col-12 -->
 					<div class="col-lg-12 quote">
-						<i class="fa fa-quote-left"></i> Passion leads to design, design leads to performance, <br />
-						performance leads to <span class="text-primary">success</span>!  
+						<i class="fa fa-quote-left"></i> Chaque opportunité locale peut devenir un premier pas professionnel, <br />
+						un vrai levier de croissance pour les étudiants et les employeurs au Sénégal. <span class="text-primary">Gorgoorlu</span> les relie avec confiance.
 						<i class="fa fa-quote-right"></i>
-						<small>Sean Themes, Developer Teams in Malaysia</small>
+						<small>Gorgoorlu Sénégal — emplois étudiants, missions et mise en relation</small>
 					</div>
 					<!-- end col-12 -->
 				</div>
