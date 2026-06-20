@@ -1,7 +1,7 @@
 <?php
-require_once("DBRepository.php");
+    require_once("DBRepository.php");
 
-class AnnonceRepository extends DBRepository
+//class AnnonceRepository extends DBRepository
 {
     //Recupérer la liste des annonces
     public function getAllAnnonces(string $statut) 
@@ -67,7 +67,6 @@ class AnnonceRepository extends DBRepository
                 SET titre = :titre,
                 description = :description,
                 salaire = :salaire,
-                statut = :statut,
                 updated_at = NOW()
                 WHERE id = :id"; 
 
@@ -90,7 +89,7 @@ class AnnonceRepository extends DBRepository
     }
 
    // Permet de désactiver (annuler) une annonce
-    public function desactiver(int $id)
+    public function desactivate(int $id)
     {
         $sql = "UPDATE annonce 
                 SET statut = 'Annule', 
@@ -109,38 +108,38 @@ class AnnonceRepository extends DBRepository
     }
 
     // Permet de réactiver une annonce
-    public function reactiver(int $id)
+    public function activate(int $id)
     {
         $sql = "UPDATE annonce 
             SET statut = 'Ouvert', 
                 deleted_at = NULL 
             WHERE id = :id";
 
-    try {
+        try {
             $statement = $this->db->prepare($sql);
             $statement->execute(['id' => $id]);
             $rowAffected = $statement->rowCount();
             return $rowAffected > 0;
-        } catch (PDOException $error) {
+            } catch (PDOException $error) {
             error_log("Erreur lors de la réactivation de l'annonce d'id $id : " . $error->getMessage());
             throw $error;
         }
     }
     
     // supprimer
-    public function supprimer(int $id)
+    public function delete(int $id)
     {
-    $sql = "DELETE FROM annonce WHERE id = :id";
+        $sql = "DELETE FROM annonce WHERE id = :id";
 
-    try {
-            $statement = $this->db->prepare($sql);
-            $statement->execute(['id' => $id]);
-            $rowAffected = $statement->rowCount();
-            return $rowAffected > 0;
-        } catch (PDOException $error) {
-            error_log("Erreur lors de la suppression définitive de l'annonce d'id $id : " . $error->getMessage());
-            throw $error;
-        }
+        try {
+                $statement = $this->db->prepare($sql);
+                $statement->execute(['id' => $id]);
+                $rowAffected = $statement->rowCount();
+                return $rowAffected > 0;
+            } catch (PDOException $error) {
+                error_log("Erreur lors de la suppression définitive de l'annonce d'id $id : " . $error->getMessage());
+                throw $error;
+            }
     }
 }
-?>
+?> 

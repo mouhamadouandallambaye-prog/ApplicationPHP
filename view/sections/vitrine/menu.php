@@ -2,7 +2,7 @@
 			<!-- begin container -->
 			<div class="container">
 				<!-- begin navbar-brand -->
-				<a href="index.php" class="navbar-brand">
+				<a href="admin.php" class="navbar-brand">
 					<span class="brand-logo"></span>
 					<span class="brand-text">
 						<span class="text-primary">Gorgoorlu</span>
@@ -27,6 +27,7 @@
 						<li class="nav-item"><a class="nav-link" href="#client" data-click="scroll-to-target">TÉMOIGNAGES</a></li>
 						<li class="nav-item"><a class="nav-link" href="#pricing" data-click="scroll-to-target">GUIDE</a></li>
 						<li class="nav-item"><a class="nav-link" href="#contact" data-click="scroll-to-target">CONTACT</a></li>
+						<li class="nav-item"><a class="nav-link" href="login">CONNEXION</a></li>
 					</ul>
 				</div>
 				<!-- end navbar-collapse -->

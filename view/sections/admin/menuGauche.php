@@ -7,19 +7,19 @@
 						<a href="javascript:;" data-toggle="nav-profile">
 							<div class="cover with-shadow"></div>
 							<div class="image">
-								<img src="public/templates/templateAdmin/assets/img/user/user-13.jpg" alt="" />
+								<img src="public/templates/templateAdmin/assets/img/user/user-13.jpg" alt="Admin Goorgoorlu" />
 							</div>
 							<div class="info">
-								<b class="caret pull-right"></b>Sean Ngu
-								<small>Front end developer</small>
+								<b class="caret pull-right"></b>Admin Goorgoorlu
+								<small>Gestion des emplois</small>
 							</div>
 						</a>
 					</li>
 					<li>
 						<ul class="nav nav-profile">
-							<li><a href="javascript:;"><i class="fa fa-cog"></i> Settings</a></li>
-							<li><a href="javascript:;"><i class="fa fa-pencil-alt"></i> Send Feedback</a></li>
-							<li><a href="javascript:;"><i class="fa fa-question-circle"></i> Helps</a></li>
+							<li><a href="javascript:;"><i class="fa fa-cog"></i> Paramètres</a></li>
+							<li><a href="javascript:;"><i class="fa fa-pencil-alt"></i> Feedback</a></li>
+							<li><a href="javascript:;"><i class="fa fa-question-circle"></i> Aide</a></li>
 						</ul>
 					</li>
 				</ul>
@@ -28,21 +28,18 @@
 				<ul class="nav"><li class="nav-header">Navigation</li>
 					<!-- ====== dashboard ===== -->
 					<li class="has-sub active">
-						<a href="javascript:;">
+						<a href="admin.php">
 							<b class="caret"></b>
 							<i class="fa fa-th-large"></i>
-							<span>Dashboard</span>
+							<span>Tableau de bord</span>
 						</a>
-						<ul class="sub-menu">
-							<li><a href="index.html">Dashboard </a></li>
-						</ul>
 					</li>
 
-					<!-- ====== Annonce ===== -->
+					<!-- ====== Offres ===== -->
 					<li class="has-sub">
 						<a href="ListeAnnonce">
-							<i class="fa fa-bullhorn"></i>
-							<span>Annonce</span>
+							<i class="fa fa-briefcase"></i>
+							<span>Annonces</span>
 						</a>
 					</li>
 
@@ -50,7 +47,7 @@
 					<li class="has-sub">
 						<a href="ListeAvis">
 							<i class="fa fa-comments"></i>
-							<span>Avis</span>
+							<span>Avis & évaluations</span>
 						</a>
 					</li>
 
@@ -58,15 +55,15 @@
 					<li class="has-sub">
 						<a href="ListeCandidature">
 							<i class="fa fa-handshake"></i>
-							<span>Candidature</span>
+							<span>Candidatures</span>
 						</a>
 					</li>
 
 					<!-- ====== Catégorie ===== -->
 					<li class="has-sub">
 						<a href="ListeCategorie">
-							<i class="fa fa-bars"></i>
-							<span>Catégorie</span>
+							<i class="fa fa-tags"></i>
+							<span>Catégories</span>
 						</a>
 					</li>
 
@@ -74,7 +71,7 @@
 					<li class="has-sub">
 						<a href="ListeUtilisateur">
 							<i class="fa fa-users"></i>
-							<span>Utilisateur</span>
+							<span>Étudiants & prestataires</span>
 						</a>
 					</li>
 
@@ -82,7 +79,7 @@
 					<li class="has-sub">
 						<a href="ListeZone">
 							<i class="fa fa-map-marker-alt"></i>
-							<span>Zone</span>
+							<span>Zones / villes</span>
 						</a>
 					</li>
 					

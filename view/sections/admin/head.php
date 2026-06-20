@@ -1,9 +1,9 @@
 <head>
 	<meta charset="utf-8" />
-	<title>Admin</title>
+	<title>Goorgoorlu - Administration</title>
 	<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport" />
-	<meta content="" name="description" />
-	<meta content="" name="author" />
+	<meta content="Espace d'administration Goorgoorlu pour gérer les offres, candidatures, avis et profils" name="description" />
+	<meta content="Goorgoorlu" name="author" />
 	
 	<!-- ================== BEGIN BASE CSS STYLE ================== -->
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet" />

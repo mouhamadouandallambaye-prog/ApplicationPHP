@@ -3,6 +3,7 @@ RewriteEngine On
 #Global
 RewriteRule ^admin$ admin.php
 RewriteRule ^home$ index.php
+RewriteRule ^login$ login.php
 
 #-------------------------- View -----------------------------
 #View Annonce
@@ -22,10 +23,47 @@ RewriteRule ^ListeCategorie$ view/pages/admin/categorie/liste.php
 RewriteRule ^CorbeilleCategorie$ view/pages/admin/categorie/corbeille.php
 
 #View Utilisateur
-RewriteRule ^ListeUtilisateur$ view/pages/admin/utilisateur/liste.php
-RewriteRule ^CorbeilleUtilisateur$ view/pages/admin/utilisateur/corbeille.php
+RewriteRule ^ListeUtilisateur$ view/pages/admin/user/liste.php
+RewriteRule ^CorbeilleUtilisateur$ view/pages/admin/user/corbeille.php
 
 #view Zone
 RewriteRule ^ListeZone$ view/pages/admin/zone/liste.php
 RewriteRule ^CorbeilleZone$ view/pages/admin/zone/corbeille.php
 
+#-------------------------- Controller -----------------------------
+#Annonce
+RewriteRule ^annonceController$ controller/annonce/AnnonceMainController.php
+
+#Avis
+RewriteRule ^avisController$ controller/avis/AvisMainController.php
+
+#Candidature
+RewriteRule ^candidatureController$ controller/candidature/CandidatureMainController.php
+
+#Catégorie
+RewriteRule ^categorieController$ controller/categorie/CategorieMainController.php
+
+#Users
+RewriteRule ^userMainController$ controller/user/UserMainController.php
+
+#Zone
+RewriteRule ^zoneController$ controller/zone/ZoneMainController.php
+
+#-------------------------- Model -----------------------------
+#Annonce
+RewriteRule ^annonceRepo$ controller/AnnonceRepository.php
+
+#Avis
+RewriteRule ^avisRepo$ controller/AvisRepository.php
+
+#Candidature
+RewriteRule ^candidatureRepo$ controller/CandidatureRepository.php
+
+#Catégorie
+RewriteRule ^categorieRepo$ controller/CategorieRepository.php
+
+#Users
+RewriteRule ^userRepo$ controller/UserRepository.php
+
+#Zone
+RewriteRule ^zoneRepo$ controller/ZoneRepository.php
