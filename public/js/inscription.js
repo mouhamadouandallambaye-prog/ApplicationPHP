@@ -1,48 +1,37 @@
 document.addEventListener("DOMContentLoaded", function() {
     
-    // 1. On cherche le bouton de validation du formulaire
-    // On utilise l'ID 'btnRegister' ou le name 'frmRegister' selon ton HTML
+    // 1. On cherche le bouton d'inscription (indique que nous sommes sur la bonne page)
     const btnSubmit = document.getElementById("btnRegister") || document.querySelector("button[name='frmRegister']");
 
-    // 2. LA SÉCURITÉ CRUCIALE : 
-    // Si le bouton n'existe pas, on quitte le script immédiatement.
-    // Cela empêche les erreurs sur la page Admin ou les autres pages.
+    // 2. SÉCURITÉ : Si le bouton n'existe pas, on arrête TOUT le script pour cette page
     if (!btnSubmit) {
         return; 
     }
 
-    // 3. SÉLECTION DES ÉLÉMENTS (uniquement si on est sur la bonne page)
+    // 3. SÉLECTION DES ÉLÉMENTS (Uniquement exécuté si le bouton existe)
     const prenomInput   = document.getElementById("prenom");
     const nomInput      = document.getElementById("nom");
     const emailInput    = document.getElementById("email");
-    const phoneInput    = document.getElementById("phone"); // vérifie si c'est 'phone' ou 'telephone' dans ton HTML
+    const phoneInput    = document.getElementById("phone"); 
     const roleSelect    = document.getElementById("role");
     const adresseInput  = document.getElementById("adresse");
     const passwordInput = document.getElementById("password");
 
-    // On désactive le bouton par défaut au chargement
     btnSubmit.disabled = true;
 
-    // --- FONCTION POUR AFFICHER L'ERREUR ---
     function showError(input, message) {
         if (!input) return;
         const errorDisplay = input.nextElementSibling; 
         if (message) {
             input.classList.add("is-invalid");
-            if (errorDisplay && errorDisplay.classList.contains("error-message")) {
-                errorDisplay.textContent = message;
-            }
+            if (errorDisplay) errorDisplay.textContent = message;
         } else {
             input.classList.remove("is-invalid");
-            if (errorDisplay && errorDisplay.classList.contains("error-message")) {
-                errorDisplay.textContent = "";
-            }
+            if (errorDisplay) errorDisplay.textContent = "";
         }
     }
 
-    // --- FONCTION DE VALIDATION GLOBALE ---
     function checkFormValidity() {
-        // On vérifie chaque champ avec l'objet Validator (chargé via validator.js)
         const prenomErr = Validator.nameValidator("Le prénom", 2, 30, prenomInput.value);
         const nomErr    = Validator.nameValidator("Le nom", 2, 30, nomInput.value);
         const emailErr  = Validator.emailValidator("L'email", emailInput.value);
@@ -51,14 +40,11 @@ document.addEventListener("DOMContentLoaded", function() {
         const passwordErr = Validator.passwordValidator("Le mot de passe", passwordInput.value, 8);
         const roleValid = roleSelect.value !== "";
     
-        // Le bouton est activé seulement si TOUTES les erreurs sont null et le rôle choisi
         const isFormValid = !prenomErr && !nomErr && !emailErr && !phoneErr && !adresseErr && !passwordErr && roleValid;
-
         btnSubmit.disabled = !isFormValid;
     }
 
-    // --- AJOUT DES ÉCOUTEURS D'ÉVÉNEMENTS ---
-
+    // ÉCOUTEURS
     prenomInput.addEventListener("input", () => {
         const err = Validator.nameValidator("Le prénom", 2, 30, prenomInput.value);
         showError(prenomInput, err ? err.message : "");
@@ -77,7 +63,7 @@ document.addEventListener("DOMContentLoaded", function() {
         checkFormValidity();
     });
 
-    if(phoneInput) {
+    if (phoneInput) {
         phoneInput.addEventListener("input", () => {
             const err = Validator.phoneValidator("Le téléphone", 9, 15, phoneInput.value);
             showError(phoneInput, err ? err.message : "");
@@ -97,9 +83,7 @@ document.addEventListener("DOMContentLoaded", function() {
         checkFormValidity();
     });
 
-    roleSelect.addEventListener("change", () => {
-        checkFormValidity();
-    });
+    roleSelect.addEventListener("change", checkFormValidity);
 
-    console.log("Validation Inscription prête !");
+    console.log("Validation Inscription active.");
 });
