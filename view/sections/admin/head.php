@@ -7,18 +7,19 @@
 	
 	<!-- ================== BEGIN BASE CSS STYLE ================== -->
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet" />
-	<link href="public/templates/templateAdmin/assets/css/default/app.min.css" rel="stylesheet" />
+	<!-- On ajoute le / devant public pour que Render le trouve à la racine -->
+	<link href="/public/templates/templateAdmin/assets/css/default/app.min.css" rel="stylesheet" />
 	<!-- ================== END BASE CSS STYLE ================== -->
 	
 	<!-- ================== BEGIN PAGE LEVEL CSS STYLE ================== -->
-	<link href="public/templates/templateAdmin/assets/plugins/jvectormap-next/jquery-jvectormap.css" rel="stylesheet" />
-	<link href="public/templates/templateAdmin/assets/plugins/nvd3/build/nv.d3.css" rel="stylesheet" />
-	<link href="public/templates/templateAdmin/assets/plugins/bootstrap-daterangepicker/daterangepicker.css" rel="stylesheet" />
+	<link href="/public/templates/templateAdmin/assets/plugins/jvectormap-next/jquery-jvectormap.css" rel="stylesheet" />
+	<link href="/public/templates/templateAdmin/assets/plugins/nvd3/build/nv.d3.css" rel="stylesheet" />
+	<link href="/public/templates/templateAdmin/assets/plugins/bootstrap-daterangepicker/daterangepicker.css" rel="stylesheet" />
 	<!-- ================== END PAGE LEVEL CSS STYLE ================== -->
 
-		<!-- ================== DATATABLE STYLE ================== -->
-	<link href="public/templates/templateAdmin/assets/plugins/datatables.net-bs4/css/dataTables.bootstrap4.min.css" rel="stylesheet" />
-	<link href="public/templates/templateAdmin/assets/plugins/datatables.net-responsive-bs4/css/responsive.bootstrap4.min.css" rel="stylesheet" />
-	<link rel="icon" type="image/png" href="public/templates/templateAdmin/assets/img/logo/logo-bs4.png" />
+	<!-- ================== DATATABLE STYLE ================== -->
+	<link href="/public/templates/templateAdmin/assets/plugins/datatables.net-bs4/css/dataTables.bootstrap4.min.css" rel="stylesheet" />
+	<link href="/public/templates/templateAdmin/assets/plugins/datatables.net-responsive-bs4/css/responsive.bootstrap4.min.css" rel="stylesheet" />
+	<link rel="icon" type="image/png" href="/public/templates/templateAdmin/assets/img/logo/logo-bs4.png" />
 	<!-- ================== END DATATABLE STYLE ================== -->
 </head>

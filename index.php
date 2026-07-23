@@ -19,7 +19,7 @@ $annonces = $annonceRepo->getPublicAnnonces(6); // On en récupère 6 pour l'acc
 	
 	<!-- ================== BASE CSS STYLE ================== -->
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet"/>
-	<link href="public/templates/templateVitrine/assets/css/one-page-parallax/app.min.css" rel="stylesheet"/>
+	<link href="/public/templates/templateVitrine/assets/css/one-page-parallax/app.min.css" rel="stylesheet"/>
 </head>
 
 	<!-- ================= BODY ================== -->
@@ -76,6 +76,6 @@ $annonces = $annonceRepo->getPublicAnnonces(6); // On en récupère 6 pour l'acc
 	</div>
 	
 	<!-- ================== BASE JS ================== -->
-	<script src="public/templates/templateVitrine/assets/js/one-page-parallax/app.min.js"></script>
+	<script src="/public/templates/templateVitrine/assets/js/one-page-parallax/app.min.js"></script>
 </body>
 </html>
