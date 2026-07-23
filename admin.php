@@ -52,8 +52,7 @@ if (!empty($chartData)) {
 
 $jsonLabels = json_encode($labels);
 $jsonCounts = json_encode($counts);
-?>
-<!DOCTYPE html>
+?><!DOCTYPE html>
 <html lang="en">
 	<!-- ================== section HEAD ================== -->
 	<?php require_once("view/sections/admin/head.php"); ?>
