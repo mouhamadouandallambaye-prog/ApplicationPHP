@@ -1,16 +1,13 @@
 <?php 
-// 1. Sécurité : On remonte 3 niveaux pour atteindre controller/ depuis view/pages/prestataire/
 require_once("../../../controller/SecurityProvider.php"); 
 protectPrestataire(); 
 
 if (session_status() === PHP_SESSION_NONE) session_start();
 
-// 2. Anti-Cache
 header("Cache-Control: no-cache, no-store, must-revalidate");
 header("Pragma: no-cache");
 header("Expires: 0");
 
-// 3. Données : On remonte 3 niveaux pour atteindre model/
 require_once("../../../model/CandidatureRepository.php");
 $candRepo = new CandidatureRepository();
 $candidatures = $candRepo->getCandidaturesForPrestataire($_SESSION['id']);
@@ -22,17 +19,13 @@ $candidatures = $candRepo->getCandidaturesForPrestataire($_SESSION['id']);
     <meta charset="utf-8" />
     <title>Candidatures Reçues | Gorgoorlu</title>
     <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport" />
-    
-    <!-- On utilise le HEAD de l'admin (remonte 2 niveaux pour view/sections/admin/) -->
     <?php require_once("../../sections/admin/head.php"); ?>
 </head>
 <body>
-    <!-- begin #page-loader -->
     <div id="page-loader" class="fade show"><span class="spinner"></span></div>
     
     <div id="page-container" class="fade page-sidebar-fixed page-header-fixed">
         
-        <!-- CORRECTION : Remplacement de layout.php par les sections réelles -->
         <?php require_once("../../sections/prestataire/menuHaut.php"); ?>
         <?php require_once("../../sections/prestataire/menuGauche.php"); ?>
 
@@ -105,12 +98,10 @@ $candidatures = $candRepo->getCandidaturesForPrestataire($_SESSION['id']);
         <a href="javascript:;" class="btn btn-icon btn-circle btn-success btn-scroll-to-top fade" data-click="scroll-top"><i class="fa fa-angle-up"></i></a>
     </div>
 
-    <!-- SCRIPTS : On remonte 2 niveaux pour view/sections/admin/ -->
     <?php require_once("../../sections/admin/script.php"); ?>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     
-    <!-- Chemin absolu pour le JS de candidature -->
-    <script src="/ApplicationPHP/public/js/candidature.js"></script>
+    <script src="/public/js/candidature.js"></script>
 
     <script>
         function showMsg(msg) {

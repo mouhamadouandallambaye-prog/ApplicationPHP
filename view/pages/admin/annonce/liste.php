@@ -118,7 +118,7 @@ $annonces = $annonceRepo->getAllAnnoncesWithDetails();
 	<!-- Scripts -->
 	<?php require_once("../../../sections/admin/config.php"); ?>
 	<?php require_once("../../../sections/admin/script.php"); ?>
-	<script src="/ApplicationPHP/public/js/annonce.js"></script>
+	<script src="/public/js/annonce.js"></script>
 	
 </body>
 </html>

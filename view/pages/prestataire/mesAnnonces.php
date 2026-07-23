@@ -79,7 +79,6 @@ $zones = (new ZoneRepository())->getAll();
                                             <?= $a['statut'] ?>
                                         </span>
                                     </td>
-                                    <!-- CORRECTION ICI : Ajout du <td> manquant -->
                                     <td class="text-nowrap">
                                         <a href="#modal-edit-annonce" data-toggle="modal" class="btn btn-sm btn-primary" onclick='editAnnonce(<?= htmlspecialchars(json_encode($a), ENT_QUOTES, "UTF-8") ?>)'>
                                             <i class="fa fa-edit"></i>
@@ -165,7 +164,7 @@ $zones = (new ZoneRepository())->getAll();
     </div>
 
     <?php require_once("../../sections/admin/script.php"); ?>
-    <script src="/ApplicationPHP/public/js/annonce.js"></script>
+    <script src="/public/js/annonce.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>
 </html>

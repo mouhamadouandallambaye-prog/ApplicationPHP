@@ -1,13 +1,14 @@
 <?php
-// Détection précise de la page d'accueil
+// Détection précise de la page d'accueil pour le mode production (Render)
 $current_uri = $_SERVER['REQUEST_URI'];
-// On est sur la home si l'URL contient index.php, home ou si on est à la racine du dossier
-$is_home = (strpos($current_uri, 'index.php') !== false || strpos($current_uri, 'home') !== false || bin2hex($current_uri) == bin2hex('/ApplicationPHP/') || $current_uri == '/ApplicationPHP');
+
+// En ligne, la home est soit '/' , soit 'index.php', soit 'home'
+$is_home = ($current_uri == '/' || strpos($current_uri, 'index.php') !== false || strpos($current_uri, 'home') !== false);
 ?>
 
 <div id="header" class="header navbar navbar-transparent navbar-fixed-top navbar-expand-lg">
     <div class="container">
-        <!-- begin navbar-brand -->
+        <!-- Brand -->
         <a href="home" class="navbar-brand">
             <span class="brand-logo"></span>
             <span class="brand-text">
@@ -23,7 +24,6 @@ $is_home = (strpos($current_uri, 'index.php') !== false || strpos($current_uri, 
             <ul class="nav navbar-nav navbar-right">
                 
                 <?php if($is_home): ?>
-                    <!-- MENU COMPLET POUR LA PAGE D'ACCUEIL (PARALLAX) -->
                     <li class="nav-item"><a class="nav-link" href="home" data-click="scroll-to-target">HOME</a></li>
                     <li class="nav-item"><a class="nav-link" href="#about" data-click="scroll-to-target">ABOUT</a></li>
                     <li class="nav-item"><a class="nav-link" href="#team" data-click="scroll-to-target">PILIERS</a></li>
@@ -35,14 +35,12 @@ $is_home = (strpos($current_uri, 'index.php') !== false || strpos($current_uri, 
                     <li class="nav-item"><a class="nav-link" href="#contact" data-click="scroll-to-target">CONTACT</a></li>
                 
                 <?php else: ?>
-                    <!-- MENU ALLÉGÉ POUR LES SOUS-PAGES (PROFIL, DÉTAILS, POSTULATIONS) -->
                     <li class="nav-item"><a class="nav-link" href="home">HOME</a></li>
                     <li class="nav-item"><a class="nav-link" href="home#about">ABOUT</a></li>
                     <li class="nav-item"><a class="nav-link" href="ToutesLesOffres">TOUTES LES OFFRES</a></li>
                     <li class="nav-item"><a class="nav-link" href="home#contact">CONTACT</a></li>
                 <?php endif; ?>
 
-                <!-- GESTION DE LA CONNEXION / COMPTE -->
                 <?php if(isset($_SESSION['id'])): ?>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle text-primary f-w-700" href="#" data-toggle="dropdown">
@@ -66,7 +64,6 @@ $is_home = (strpos($current_uri, 'index.php') !== false || strpos($current_uri, 
                 <?php else: ?>
                     <li class="nav-item"><a class="nav-link" href="login">CONNEXION</a></li>
                 <?php endif; ?>
-
             </ul>
         </div>
     </div>

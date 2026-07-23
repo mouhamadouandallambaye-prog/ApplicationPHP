@@ -7,15 +7,16 @@
     </div>
     <ul class="navbar-nav navbar-right">
         <li class="dropdown navbar-user">
-    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-        <img src="public/images/users/<?= $_SESSION['photo'] ?? 'default.png' ?>" alt="" /> 
-        <span class="d-none d-md-inline"><?= $_SESSION['prenom'] ?></span> <b class="caret"></b>
-    </a>
-    <div class="dropdown-menu dropdown-menu-right">
-        <a href="MonProfil" class="dropdown-item">Paramètres du profil</a>
-        <div class="dropdown-divider"></div>
-        <a href="/ApplicationPHP/Logout" class="dropdown-item text-danger"><i class="fa fa-sign-out-alt m-r-10"></i> Déconnexion</a>
-    </div>
-</li>
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                <img src="public/images/users/<?= $_SESSION['photo'] ?? 'default.png' ?>" alt="" /> 
+                <span class="d-none d-md-inline"><?= $_SESSION['prenom'] ?></span> <b class="caret"></b>
+            </a>
+            <div class="dropdown-menu dropdown-menu-right">
+                <a href="MonProfil" class="dropdown-item">Paramètres du profil</a>
+                <div class="dropdown-divider"></div>
+                <!-- Correction du lien pour la production -->
+                <a href="/Logout" class="dropdown-item text-danger"><i class="fa fa-sign-out-alt m-r-10"></i> Déconnexion</a>
+            </div>
+        </li>
     </ul>
 </div>
