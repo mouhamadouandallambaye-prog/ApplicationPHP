@@ -1,4 +1,5 @@
 <?php 
+ob_start(); 
 if (session_status() === PHP_SESSION_NONE) session_start();
 // 1. Empêcher le retour arrière du navigateur (Cache)
 header("Cache-Control: no-cache, no-store, must-revalidate"); // HTTP 1.1.
