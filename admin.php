@@ -1,6 +1,5 @@
 <?php 
 if (session_status() === PHP_SESSION_NONE) session_start();
-
 // 1. Empêcher le retour arrière du navigateur (Cache)
 header("Cache-Control: no-cache, no-store, must-revalidate"); // HTTP 1.1.
 header("Pragma: no-cache"); // HTTP 1.0.
@@ -12,7 +11,6 @@ if (!isset($_SESSION['id']) || $_SESSION['role'] !== 'Admin') {
     header("Location: login?error=1&message=" . urlencode("Accès refusé. Veuillez vous connecter en tant qu'administrateur."));
     exit();
 }
-
 // 1. Inclusions des modèles
 require_once("model/AnnonceRepository.php");
 require_once("model/UserRepository.php");
@@ -24,21 +22,17 @@ $annRepo = new AnnonceRepository();
 $userRepo = new UserRepository();
 $candRepo = new CandidatureRepository();
 $avisRepo = new AvisRepository();
-
 $statsAnnonces = $annRepo->countAllActive();
 $statsEtudiants = $userRepo->countByRole('Etudiant');
 $statsPrestataires = $userRepo->countByRole('Prestataire');
 $statsCandidatures = $candRepo->countAll();
 $avisData = $avisRepo->getGlobalStats();
-
 $totalAvis = $avisData['total'] ?? 0;
 $moyenneAvis = $avisData['moyenne'] ? number_format($avisData['moyenne'], 1, ',', '') : '0';
 $chartData = $candRepo->getStatsLast7Days();
-
 // ... après la récupération de $chartData
 $labels = [];
 $counts = [];
-
 if (!empty($chartData)) {
     foreach($chartData as $data) {
         $labels[] = date('d M', strtotime($data['date']));
@@ -49,7 +43,6 @@ if (!empty($chartData)) {
     $labels = ['Lun', 'Mar', 'Mer', 'Jeu', 'Ven', 'Sam', 'Dim'];
     $counts = [0, 0, 0, 0, 0, 0, 0];
 }
-
 $jsonLabels = json_encode($labels);
 $jsonCounts = json_encode($counts);
 ?><!DOCTYPE html>
@@ -118,49 +111,37 @@ $jsonCounts = json_encode($counts);
    
     
 
-    <script>
-        // On attend que la page et les scripts soient totalement chargés
-        document.addEventListener("DOMContentLoaded", function() {
-            var options = {
-                series: [{
-                    name: 'Candidatures',
-                    data: <?php echo $jsonCounts; ?>
-                }],
-                chart: {
-                    type: 'area',
-                    height: 250,
-                    toolbar: { show: false },
-                    foreColor: '#adb5bd' // Couleur du texte (gris clair)
-                },
-                colors: ['#00acac'], // Couleur Teal du template
-                stroke: { curve: 'smooth', width: 3 },
-                fill: {
-                    type: 'gradient',
-                    gradient: {
-                        shadeIntensity: 1,
-                        opacityFrom: 0.5,
-                        opacityTo: 0.1,
-                        stops: [0, 90, 100]
-                    }
-                },
-                dataLabels: { enabled: false },
-                xaxis: {
-                    categories: <?php echo $jsonLabels; ?>,
-                    axisBorder: { show: false },
-                    axisTicks: { show: false }
-                },
-                grid: {
-                    borderColor: '#333', // Lignes de fond sombres
-                    strokeDashArray: 4
-                },
-                theme: { mode: 'dark' }
-            };
+     <!-- 1. ON RECHARGE LA BIBLIOTHÈQUE ICI (Indispensable sur Render) -->
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
 
-            // On vérifie si l'élément existe avant de dessiner
-            var chartElement = document.querySelector("#apex-candidatures-chart");
-            if (chartElement) {
-                var chart = new ApexCharts(chartElement, options);
+    <script>
+        // 2. On attend que TOUT soit chargé (DOMContentLoaded)
+        document.addEventListener("DOMContentLoaded", function() {
+            // Vérification de sécurité
+            if (typeof ApexCharts !== 'undefined' && document.querySelector("#apex-candidatures-chart")) {
+                var options = {
+                    series: [{
+                        name: 'Candidatures',
+                        data: <?php echo $jsonCounts; ?>
+                    }],
+                    chart: {
+                        type: 'area',
+                        height: 250,
+                        toolbar: { show: false },
+                        foreColor: '#adb5bd'
+                    },
+                    colors: ['#00acac'],
+                    stroke: { curve: 'smooth', width: 3 },
+                    xaxis: {
+                        categories: <?php echo $jsonLabels; ?>
+                    },
+                    theme: { mode: 'dark' }
+                };
+
+                var chart = new ApexCharts(document.querySelector("#apex-candidatures-chart"), options);
                 chart.render();
+            } else {
+                console.error("Erreur : ApexCharts n'est toujours pas chargé.");
             }
         });
     </script>
