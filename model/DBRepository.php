@@ -8,13 +8,15 @@
     protected $db;
 
     public function __construct()
-    {
-        $this->host = getenv('DB_HOST') ?: 'localhost';
-        $this->dbname = getenv('DB_NAME') ?: 'goorgoorlou_db';
-        $this->user = getenv('DB_USER') ?: 'root';
-        $this->password = getenv('DB_PASSWORD') ?: '';
-        $this->getConnexion();
-    }
+{
+    // On essaie de lire les variables d'environnement (pour le serveur)
+    // Si elles n'existent pas, on prend les valeurs locales (pour ton XAMPP)
+    $this->host = getenv('DB_HOST') ?: 'localhost';
+    $this->dbname = getenv('DB_NAME') ?: 'goorgoorlou_db';
+    $this->user = getenv('DB_USER') ?: 'root';
+    $this->password = getenv('DB_PASSWORD') ?: '';
+    $this->getConnexion();
+}
 
     private function getConnexion()
     {
