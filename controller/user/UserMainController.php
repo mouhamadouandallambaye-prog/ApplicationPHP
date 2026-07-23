@@ -44,6 +44,3 @@ if (isset($_POST['frmUpdateFullInfo'])) {
 if (isset($_GET['action']) && $_GET['action'] == 'logout') {
     $controller->logout();
 }
-
-
-?>

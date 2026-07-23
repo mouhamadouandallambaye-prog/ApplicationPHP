@@ -203,11 +203,4 @@ public function updateFullProfile($id, $nom, $prenom, $phone, $adresse, $ninea =
         $stmt = $this->db->prepare($sql);
         return $stmt->execute(['pass' => $hashed, 'id' => $id]);
     }
-
-
-
-
-
-
-
 }

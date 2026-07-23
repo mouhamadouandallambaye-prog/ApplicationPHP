@@ -202,7 +202,4 @@ public function countPendingCandidatures(?int $id = null) {
         return 0;
     }
 }
-
-
-
 }
