@@ -47,12 +47,12 @@ public function auth() {
             $_SESSION["nom"] = $user['nom'];
             $_SESSION["prenom"] = $user['prenom'];
             $_SESSION["role"] = $user['role'];
-            $_SESSION["email"] = $user['email'];      // AJOUTÉ
-            $_SESSION["phone"] = $user['phone'];      // AJOUTÉ
-            $_SESSION["adresse"] = $user['adresse'];  // AJOUTÉ
-            $_SESSION["photo"] = $user['photo'];      // AJOUTÉ
-            $_SESSION["ninea"] = $user['ninea'];      // AJOUTÉ
-            $_SESSION["created_at"] = $user['created_at']; // AJOUTÉ POUR LA DATE
+            $_SESSION["email"] = $user['email'];      
+            $_SESSION["phone"] = $user['phone'];      
+            $_SESSION["adresse"] = $user['adresse'];  
+            $_SESSION["photo"] = $user['photo'];      
+            $_SESSION["ninea"] = $user['ninea'];      
+            $_SESSION["created_at"] = $user['created_at']; 
 
             $url = ($user['role'] === 'Admin') ? "admin" : (($user['role'] === 'Prestataire') ? "DashboardPrestataire" : "home");
             header("Location: $url?succes=1&message=".urlencode("Heureux de vous revoir"));

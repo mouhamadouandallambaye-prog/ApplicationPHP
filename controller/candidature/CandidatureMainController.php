@@ -20,13 +20,6 @@ if (isset($_POST['frmEditCandidature'])) {
     $candCtrl->updateCandidature();
 }
 
-/* Suppimer
-if (isset($_GET['delete_id'])) {
-    $id = $_GET['delete_id'];
-    $motif = isset($_GET['motif']) ? urldecode($_GET['motif']) : "Non précisé";
-    $candCtrl->deleteCandidature($id, $motif);
-}*/
-
 if (isset($_GET['restore_id'])) {
     $candCtrl->restoreCandidature($_GET['restore_id']);
 }

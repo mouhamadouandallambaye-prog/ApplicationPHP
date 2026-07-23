@@ -183,7 +183,7 @@ class AnnonceRepository extends DBRepository
     }
 }
 
-    // Dans AnnonceRepository.php
+ 
 
 public function getAnnonceFullDetails(int $id)
 {
@@ -205,7 +205,7 @@ public function getAnnonceFullDetails(int $id)
     }
 }
 
-// Dans model/AnnonceRepository.php
+
 
 /**
  * Récupère les annonces actives d'un prestataire spécifique

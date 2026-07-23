@@ -17,7 +17,6 @@ if (isset($_POST['frmEditCategorie'])) {
 if (isset($_GET['delete_id'])) {
     $catCtrl->deleteCategorie($_GET['delete_id']);
 }
-// ... après les autres conditions ...
 
 if (isset($_GET['restore_id'])) {
     $catCtrl->restoreCategorie($_GET['restore_id']);

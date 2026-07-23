@@ -26,8 +26,6 @@ if (isset($_GET['delete_id'])) {
     $annonceCtrl->deleteAnnonce($id, $motif); 
 }
 
-// Dans AnnonceMainController.php
-
 if (isset($_GET['restore_id'])) {
     $annonceCtrl->restoreAnnonce($_GET['restore_id']);
 }

@@ -27,7 +27,6 @@ if (isset($_GET['delete_id'])) {
     $motif = isset($_GET['motif']) ? urldecode($_GET['motif']) : "Non précisé";
     $controller->deleteUser($id, $motif);
 }
-// Dans controller/user/UserMainController.php (à la fin)
 
 if (isset($_GET['restore_id'])) {
     $controller->restoreUser($_GET['restore_id']);

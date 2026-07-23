@@ -119,9 +119,6 @@ class AnnonceController
         }
     }
 
-// Dans controller/annonce/AnnonceController.php
-
-
 // Restaurer une annonce
 public function restoreAnnonce($id)
 {

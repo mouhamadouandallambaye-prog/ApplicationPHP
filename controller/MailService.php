@@ -2,7 +2,7 @@
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
-// On inclut les fichiers de la bibliothèque que tu as mis dans public/libs
+// On inclut les fichiers de la bibliothèque dans public/libs
 require_once __DIR__ . '/../public/libs/PHPMailer/Exception.php';
 require_once __DIR__ . '/../public/libs/PHPMailer/PHPMailer.php';
 require_once __DIR__ . '/../public/libs/PHPMailer/SMTP.php';
@@ -16,7 +16,7 @@ class MailService {
             $mail->isSMTP();
             $mail->Host       = 'sandbox.smtp.mailtrap.io';
             $mail->SMTPAuth   = true;
-            $mail->Username   = 'e16f6a5d941d26'; // Ton Username
+            $mail->Username   = 'e16f6a5d941d26'; //  Username
             $mail->Password   = '1d5058e4fd1974'; // mot de passe
             $mail->Port       = 2525;
 

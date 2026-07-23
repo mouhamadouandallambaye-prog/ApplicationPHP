@@ -116,7 +116,7 @@ class UserRepository extends DBRepository
         }
     }
 
-    // Dans model/UserRepository.php (à ajouter dans la classe)
+    
 
 /**
  * Récupérer les utilisateurs supprimés (corbeille) par rôle

@@ -15,7 +15,7 @@ class AvisRepository extends DBRepository {
         } catch (PDOException $e) { return []; }
     }
 
-    // NOUVELLE MÉTHODE : Pour récupérer l'email de l'auteur d'un avis
+    //  Pour récupérer l'email de l'auteur d'un avis
     public function getAvisAuthorDetails($id) {
         $sql = "SELECT a.*, u.email, u.prenom FROM avis a JOIN users u ON a.user_id = u.id WHERE a.id = :id";
         $stmt = $this->db->prepare($sql);
